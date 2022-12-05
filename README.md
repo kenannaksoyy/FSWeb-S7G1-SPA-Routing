@@ -11,14 +11,14 @@ Konular:
 
 ### Görev 1: Proje Kurulumu
 
-* [ ] Repoyu **Forklayın** , ve forku klonlayın.
-* [ ] **Not** Çalıştıracağınız 2 server var o yüzden talimatları dikkatlice okuyun.
-* [ ] **Root klasöründe**: `npm install` yazarak bağımlılıkları indirin.
-* [ ] `npm start` ya da `node server.js` komutuyla çalıştırın. (Bu işlemi neden yaptığımız konusunda endişelenmeyin, bu konuyla ilgili ilerleyen adımlarda daha açıklayıcı bilgiler bulacaksın).
-* [ ] Başka bir terminal penceresinde `client` klasörüne girin ve `npm install` yazarak bağımlılıklarını indirin.
-* [ ] `client` klasöründeyken `npm start` yazarak client uygulamasını çalıştırın.
+* [x] Repoyu **Forklayın** , ve forku klonlayın.
+* [x] **Not** Çalıştıracağınız 2 server var o yüzden talimatları dikkatlice okuyun.
+* [x] **Root klasöründe**: `npm install` yazarak bağımlılıkları indirin.
+* [x] `npm start` ya da `node server.js` komutuyla çalıştırın. (Bu işlemi neden yaptığımız konusunda endişelenmeyin, bu konuyla ilgili ilerleyen adımlarda daha açıklayıcı bilgiler bulacaksın).
+* [x] Başka bir terminal penceresinde `client` klasörüne girin ve `npm install` yazarak bağımlılıklarını indirin.
+* [x] `client` klasöründeyken `npm start` yazarak client uygulamasını çalıştırın.
 
-* [ ] Öncelikle uygulamanız client üzerinden çalışmaya başlayınca şuradaki gibi bir tarayıcı penceresi göreceksiniz:  [bknz](./Assets/filmler-anasayfa.png) `localhost:3000` (eğer 3000 kullanılıyorsa port numarası farklı olabilir).
+* [x] Öncelikle uygulamanız client üzerinden çalışmaya başlayınca şuradaki gibi bir tarayıcı penceresi göreceksiniz:  [bknz](./Assets/filmler-anasayfa.png) `localhost:3000` (eğer 3000 kullanılıyorsa port numarası farklı olabilir).
 
 ### Görev 2: MVP (MUÜ)
 
@@ -26,22 +26,22 @@ Konular:
 
 Uygulamanızı bitirdiğinizde 2 adet route'u olacaktır:
 
-* [ ] [route SS'/'](./Assets/ilk-route.png)
-* [ ] [route SS '/filmler/:id'](./Assets/ikinci-route.png)
+* [x] [route SS'/'](./Assets/ilk-route.png)
+* [x] [route SS '/filmler/:id'](./Assets/ikinci-route.png)
 
 #### Routeların uygulanması
 
-* [ ] Routerlarla app'i düzenleyin.
-* [ ] App dosyanıza 2 adet route ekleyin.
-  * [ ] birinci route'unuz `/` olacak ve `FilmListesi` bileşenini yükleyecek. Bu bileşene proplarla filmler apisinden alınan datayı aktarın.
-  * [ ] diğer route `/filmler/` parametresinden sonra `id` parametresini alacak  (örnek: `/filmler/2`, `/filmler/3` id dinamik olacak). Bu route `Film` bileşenini yükleyecek.
+* [x] Routerlarla app'i düzenleyin.
+* [x] App dosyanıza 2 adet route ekleyin.
+  * [x] birinci route'unuz `/` olacak ve `FilmListesi` bileşenini yükleyecek. Bu bileşene proplarla filmler apisinden alınan datayı aktarın.
+  * [x] diğer route `/filmler/` parametresinden sonra `id` parametresini alacak  (örnek: `/filmler/2`, `/filmler/3` id dinamik olacak). Bu route `Film` bileşenini yükleyecek.
 
 #### İşlevsellik Kazandırın
 
-* [ ] Bir kullanıcı `FilmListesi` içindeki film cardına tıkladığında seçilen filmin detaylarını görebilmeli {`/movies/{tıklanılan film idsi}`.
-* [ ] URL'den seçilen film idsini almak için `Film.js` dosyasının 7. satırını düzenlenemeniz gerekir.
-* [ ] `KaydedilenlerListesi` bileşindeki `AnaSayfa` butonuna işlevsellik kazındırın, Anasayfaya geri dönmeli.
-* [ ] Artık fil listesinde ileri geri ilerleyebiliyor olmalısın ve bir filmin detaylarını görebilmelisin.
+* [x] Bir kullanıcı `FilmListesi` içindeki film cardına tıkladığında seçilen filmin detaylarını görebilmeli {`/movies/{tıklanılan film idsi}`.
+* [x] URL'den seçilen film idsini almak için `Film.js` dosyasının 7. satırını düzenlenemeniz gerekir.
+* [x] `KaydedilenlerListesi` bileşindeki `AnaSayfa` butonuna işlevsellik kazındırın, Anasayfaya geri dönmeli.
+* [x] Artık fil listesinde ileri geri ilerleyebiliyor olmalısın ve bir filmin detaylarını görebilmelisin.
 
 ### Görev 3: Esnek görevler
 

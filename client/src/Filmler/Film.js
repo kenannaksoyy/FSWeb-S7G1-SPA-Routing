@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import {useParams} from "react-router-dom";
 
 export default function Film(props) {
   const [movie, setMovie] = useState();
 
-  let id = 1;
+  let id = (useParams()).id;
   // URL'den alınan :id parametresini bu değişkene aktarın
+  //useParams ile gelen urlden id bilgisini objeden aldık
 
   useEffect(() => {
     axios
@@ -13,6 +15,7 @@ export default function Film(props) {
       .then(response => {
           // Bu kısmı log statementlarıyla çalışın
           // ve burdan gelen response'u 'movie' e aktarın
+          setMovie(response.data);
       })
       .catch(error => {
         console.error(error);
